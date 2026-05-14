@@ -76,7 +76,3 @@ jupyter notebook aqi.ipynb
 - The project is script- and notebook-based rather than packaged as a Python module.
 - Reproducing exact metrics may depend on local library versions.
 - The current dataset supports pollutant forecasting more directly than official AQI forecasting.
-
-## Suggested Repository Description
-
-`Machine learning project for analyzing and forecasting air quality using historical pollution data and tree-based models.`
