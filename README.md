@@ -2,7 +2,7 @@
 
 Machine learning project for analyzing and forecasting air quality using historical pollutant measurements and time-based feature engineering.
 
-This repository centers on the notebook [aqi.ipynb](/Users/anshparmar/Desktop/PROJECTS/AQI/aqi.ipynb), which explores the dataset, builds features, trains multiple tree-based regressors, and saves trained model artifacts.
+This repository includes both a notebook workflow and a standalone Python script for exploring the dataset, building features, training tree-based regressors, and saving trained model artifacts.
 
 ## Project Scope
 
@@ -32,6 +32,7 @@ Current dataset columns:
 ## Repository Structure
 
 - [`aqi.ipynb`](/Users/anshparmar/Desktop/PROJECTS/AQI/aqi.ipynb): end-to-end analysis, feature engineering, training, evaluation, and model export
+- [`air_quality_forecasting.py`](/Users/anshparmar/Desktop/PROJECTS/AQI/air_quality_forecasting.py): standalone training script for terminal-based runs
 - [`delhi_aqi.csv`](/Users/anshparmar/Desktop/PROJECTS/AQI/delhi_aqi.csv): source dataset used by the notebook
 - [`models/lightgbm_best.joblib`](/Users/anshparmar/Desktop/PROJECTS/AQI/models/lightgbm_best.joblib): saved LightGBM model
 - [`models/xgb_model.joblib`](/Users/anshparmar/Desktop/PROJECTS/AQI/models/xgb_model.joblib): saved XGBoost model
@@ -48,7 +49,13 @@ pip install -r requirements.txt
 
 ## Run
 
-Open the notebook locally:
+Run the standalone Python script:
+
+```bash
+python air_quality_forecasting.py
+```
+
+Or open the notebook locally:
 
 ```bash
 jupyter notebook aqi.ipynb
@@ -66,7 +73,7 @@ jupyter notebook aqi.ipynb
 
 ## Current Limitations
 
-- The project is notebook-first rather than packaged as a Python module.
+- The project is script- and notebook-based rather than packaged as a Python module.
 - Reproducing exact metrics may depend on local library versions.
 - The current dataset supports pollutant forecasting more directly than official AQI forecasting.
 
